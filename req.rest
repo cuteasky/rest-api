@@ -1,0 +1,29 @@
+GET http://localhost:3000/cerita
+
+###
+GET http://localhost:3000/cerita/61d5558274ddc386b2bafaa3
+
+###
+POST http://localhost:3000/cerita/61d55a441727d65af7e1fd55
+Content-Type: application/json
+
+{
+  "judul": "Boy si Anak Jahanam",
+  "penulis": "Rizki Maulana",
+  "kategori": "Fiktif",
+  "isi_cerita": "Di awal cerita di perlihatkan seorang anak laki - laki yang.."
+}
+
+###
+PATCH http://localhost:3000/cerita/61d55a441727d65af7e1fd58
+Content-Type: application/json
+
+{
+  "judul": "Boy si Anak Jahanam",
+  "penulis": "Rizki Maulana",
+  "kategori": "Fiktif",
+  "isi_cerita": "Di awal cerita di perlihatkan seorang anak laki - laki yang.."
+}
+
+###
+DELETE http://localhost:3000/cerita/61d55c98e4da7ee28b0c2ff9
