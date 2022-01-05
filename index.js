@@ -2,6 +2,8 @@ import express from 'express';
 import mongoose from 'mongoose';
 import router from './routes/index.js';
 import cors from 'cors';
+
+const PORT = process.env.port || 3000;
 const app = express();
 
 mongoose.connect('mongodb://localhost:27017/restful_db', {
@@ -16,4 +18,4 @@ app.use(cors());
 app.use(express.json());
 app.use('/cerita', router);
 
-app.listen('3000', () => console.log('Server Running at port: 3000'));
+app.listen(PORT, () => console.log('Server Running at port: 3000'));
