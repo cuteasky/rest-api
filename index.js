@@ -18,4 +18,4 @@ app.use(cors());
 app.use(express.json());
 app.use('/cerita', router);
 
-app.listen(PORT, () => console.log('Server Running at port: 3000'));
+app.listen(PORT, () => console.log('Server Running at port:' + PORT));
